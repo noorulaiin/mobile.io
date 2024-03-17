@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/deb44971fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top-bar">
+            <div class="left"><p>5:15</p></div>
+            <div class="right">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-half"></i>
+            </div>
+        </div>
+        <div class="top">
+            <input type="number" name="display" id="display" placeholder="+123 456789">
+            <p>Add Number</p>
+        </div>
+        <div class="middle">
+            <button class="button" onclick="disp('1')">1</button>
+
+                <button class="button" onclick="disp('2')">
+                    2<span>abc</span>
+                </button>
+                <button class="button" onclick="disp('3')">
+                    3<span>def</span>
+                </button>
+                <button class="button" onclick="disp('4')">
+                    4<span>ghi</span>
+                </button>
+                <button class="button" onclick="disp('5')">
+                    5<span>jkl</span>
+                </button>
+                <button class="button" onclick="disp('6')">
+                    6<span>mno</span>
+                </button>
+                <button class="button" onclick="disp('7')">
+                    7<span>pqrs</span>
+                </button>
+                <button class="button" onclick="disp('8')">
+                    8<span>tuv</span>
+                </button>
+                <button class="button" onclick="disp('9')">
+                    9<span>xyz</span>
+                </button>
+
+                <button onclick="disp('*')">
+                    <i class="fa-solid fa-star-of-life"></i>
+                </button>
+
+                <button class="button" onclick="disp('0')">
+                    0<span>+</span>
+                </button>
+                
+                <button onclick="disp('#')">
+                <i class="fa-solid fa-hashtag"></i>
+                </button>
+
+                <button onclick="onCall()">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+                <button onclick="onDelete()">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+        </div>
+        <div class="bottom-bar">
+            <div class="btns">
+                <div class="btn">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Favourites</p>
+                </div>
+                <div class="btn">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Recents</p>
+                </div>
+                <div class="btn">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p>Contacts</p>
+                </div>
+                <div class="btn active">
+                    <i class="fa-solid fa-mobile-retro"></i>
+                    <p>Keypad</p>
+                </div>
+                <div class="btn">
+                    <i class="fa-solid fa-voicemail"></i>
+                    <p>Voicemail</p>
+                </div>
+            </div>
+            <div class="mini-bar"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Popup Container -->
+<!-- <div id="popupContainer" class="popup-container">
+    <div class="popup-content">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <p>You are ready to make a call!</p>
+    </div>
+</div> -->
+    
+    <script src="main.js"></script>
+</body>
+</html>
