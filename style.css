@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+.main{
+    background-color: black;
+    width: 25%;
+    min-width: 390px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    /* overflow: hidden; */
+}
+/*Signal Bar*/
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: white;
+    /* height: 15px; */
+    /* align-items: center; */
+}
+.top-bar .left,
+.top-bar .right{
+    width: 100%;
+    text-indent: 5px;
+}
+.top-bar .right{
+    text-align: right;
+    padding-right: 10px;
+}
+.top-bar .fa-battery-half{
+    font-size: 14px;
+}
+
+/*Dailer Body*/
+
+.top,
+.middle{
+    height: 50%;
+    text-align: center;
+}
+
+.top input{
+    padding: 0 15%;
+    width: 100%;
+    font-size: 42px;
+    margin-top: 20%;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+.top p{
+    color: royalblue;
+    cursor: pointer;
+}
+
+/*Dailer Pad*/
+.middle{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+}
+
+.middle button{
+    background-color: rgb(67, 67, 67);
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    vertical-align: middle;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.middle button:nth-last-child(2) {
+    grid-column: 2; /* Aligns the second-to-last button to the second column */
+    background-color: green;
+}
+.middle button:nth-last-child(2):hover{
+    background-color: lightgreen;
+}
+.middle button:last-child {
+    grid-column: 3; /* Aligns the last button to the third column */
+    background-color: transparent;
+    color: rgb(67, 67, 67);
+}
+.middle button:last-child:hover{
+    color: rgb(171, 171, 171);
+}
+button:hover{
+    background-color: gray;
+}
+
+
+/*Bottom Bar*/
+.bottom-bar{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-bar .btns{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    color: rgb(167, 167, 167);
+}
+.bottom-bar .btns i{
+    font-size: 20px;
+}
+.bottom-bar .btns p{
+    font-size: 12px;
+}
+
+.mini-bar{
+    height: 5px;
+    background-color: white;
+    margin: 5px 35%;
+    border-radius: 10px;
+}
+.bottom-bar .btn:hover{
+    color: royalblue;
+    cursor: pointer;
+}
+.active{
+    color: royalblue;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+}
+.button span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 400px) {
+    .top-bar{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: gray;
+    min-width: 390px;
+    margin: 15% auto;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    top: 0;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
