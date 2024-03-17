@@ -20,7 +20,7 @@ function onCall() {
     // Check if input value has five characters
     if (inputValue.length === 5) {
         // Display a popup or perform any action you want
-        let a = prompt("Press: \n 1) For Call \n 2) For SMS \n 3) For Customer Service \n 3) For Balance");
+        let a = prompt("Press: \n 1) For Call \n 2) For SMS \n 3) For Customer Service \n 4) For Balance");
 
         a = Number(a); // Convert input to number
         switch(a){
